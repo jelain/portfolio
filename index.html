@@ -387,13 +387,25 @@
     <div class="container e section">
       <h1>Contact</h1>
       <div class="containsep"><div class="sep"></div></div>
-      <div class="icon">
-        <a href="https://fr.linkedin.com/in/jelain-john-jesuratnam-64b702270"
-          ><img src="src/LinkedIn.png"
-        /></a>
-        <a href="https://fr.linkedin.com/in/jelain-john-jesuratnam-64b702270"
-          ><img src="src/github.png"
-        /></a>
+      <div class="form">
+        <form action="formulaire.php" method="post">
+          <input type="text" name="nom" placeholder="Nom" /><br />
+          <input type="email" name="email" placeholder="E-mail" /><br />
+          <textarea
+            name="message"
+            rows="5"
+            cols="40"
+            placeholder="Message"
+          ></textarea>
+          <br />
+          <div class="btn">
+            <input type="submit" value="Envoyer" class="btn-envoyer" />
+            <div class="icon">
+              <i class="fa-brands fa-linkedin-in"></i>
+              <i class="fa-brands fa-github"></i>
+            </div>
+          </div>
+        </form>
       </div>
     </div>
 

@@ -602,10 +602,87 @@ i {
   color: #54c9cd;
 }
 
-.e img {
-  width: 60px;
+.form {
+  display: flex;
+  justify-content: center;
+  background-color: #2a2b69;
+  color: #fff;
+  width: 45%;
+  border-radius: 20px;
 }
 
-.e img:hover {
+form {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.e {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.e .btn {
+  display: flex;
+}
+
+.form input {
+  width: 100%;
+  height: 60px;
+  border-radius: 15px;
+  border: none;
+}
+
+.form textarea {
+  width: 100%;
+  height: 300px;
+  border-radius: 15px;
+}
+
+.btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn i {
+  font-size: 30px;
   cursor: pointer;
+}
+
+.btn > input {
+  width: 20%;
+  height: 50px;
+  border-radius: 15px;
+  background-color: #3e3d89;
+  color: #fff;
+  cursor: pointer;
+}
+
+.e .icon {
+  width: 12%;
+  display: flex;
+  justify-content: space-between;
+}
+
+input::placeholder {
+  font-family: "europaregular";
+  font-size: 15px;
+}
+
+input {
+  font-size: 15px;
+  padding: 10px;
+  font-family: "europaregular";
+}
+
+textarea {
+  font-size: 15px;
+  font-family: "europaregular";
+  padding: 10px;
+}
+textarea::placeholder {
+  font-family: "europaregular";
+  font-size: 15px;
 }
