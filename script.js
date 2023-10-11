@@ -115,16 +115,3 @@ buttons.forEach((btn) => {
     e.stopPropagation();
   });
 });
-
-var divs = document.querySelectorAll("div");
-
-// Vérifie s'il y a au moins un div dans le document
-if (divs.length > 0) {
-  // Récupère le dernier div dans la liste
-  var dernierDiv = divs[divs.length - 1];
-
-  // Supprime le dernier div du document
-  dernierDiv.parentNode.removeChild(dernierDiv);
-} else {
-  console.log("Aucun div trouvé dans le document.");
-}
