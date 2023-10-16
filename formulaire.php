@@ -5,8 +5,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message = $_POST["message"];
 
     $destinataire = "jelainjohn@outlook.fr";
-    $sujet = "Nouveau message de $nom";
-    $corps_message = "De: $nom\nE-mail: $email\n\n$message";
+    $sujet = "Portfolio: $nom";
+    $corps_message = "Nom: $nom\nE-mail: $email\n------------------------------------------\n\n$message";
 
     // Envoi de l'e-mail
     mail($destinataire, $sujet, $corps_message);

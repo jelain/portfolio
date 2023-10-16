@@ -115,3 +115,77 @@ buttons.forEach((btn) => {
     e.stopPropagation();
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const texte = "Je suis Jelain John Jesuratnam ";
+  const texteDiv = document.querySelector(".prenom");
+  let i = 0;
+
+  function afficherTexte() {
+    texteDiv.textContent = texte.slice(0, i);
+    i++;
+
+    if (i <= texte.length) {
+      const delai = Math.random() * 130 + 60;
+      setTimeout(afficherTexte, delai);
+    } else {
+      document.querySelector(".clignotant").style.display = "none";
+    }
+  }
+
+  afficherTexte();
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const cardWrapper = document.querySelector(".card-wrapper");
+  const cards = document.querySelectorAll(".card");
+  const totalCards = cards.length;
+  const middleIndex = Math.floor(totalCards / 2);
+
+  // Fonction pour déplacer les cartes vers la gauche
+  function moveLeft() {
+    cardWrapper.appendChild(cardWrapper.firstElementChild);
+    updateCardStyles();
+  }
+
+  // Fonction pour déplacer les cartes vers la droite
+  function moveRight() {
+    cardWrapper.insertBefore(
+      cardWrapper.lastElementChild,
+      cardWrapper.firstElementChild
+    );
+    updateCardStyles();
+  }
+
+  // Fonction pour mettre à jour les styles des cartes
+  function updateCardStyles() {
+    const cardElements = Array.from(cards);
+    const middleCardIndex = cardElements.indexOf(
+      cardWrapper.querySelector(".card:nth-child(2)")
+    );
+
+    cardElements.forEach((card, index) => {
+      const adjustedIndex =
+        (index - middleCardIndex + middleIndex + totalCards) % totalCards;
+      if (adjustedIndex === middleIndex) {
+        // Si la carte est au milieu, changez le fond en rouge
+        card.classList.add("active");
+        card.classList.remove("cote");
+      } else {
+        // Sinon, réinitialisez le fond à sa valeur d'origine
+        card.classList.remove("active");
+        card.classList.add("cote");
+      }
+    });
+  }
+
+  // Ajout des écouteurs d'événements pour les flèches
+  const leftArrow = document.querySelector(".left-arrow");
+  leftArrow.addEventListener("click", moveLeft);
+
+  const rightArrow = document.querySelector(".right-arrow");
+  rightArrow.addEventListener("click", moveRight);
+
+  // Appliquez initialement les styles des cartes
+  updateCardStyles();
+});

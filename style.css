@@ -44,16 +44,58 @@ body {
 .ban > .contenu {
   width: 80%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   height: 90vh;
 }
 
-.ban img {
-  pointer-events: none;
-  height: 70%;
+.image {
+  position: relative;
+  width: 50%;
+  z-index: 0;
+}
+.image img {
+  width: 100%;
 }
 
+.img1 {
+  content: url(src/engrenage.png);
+  position: absolute;
+  top: 13%;
+  left: 55%;
+  width: 25%;
+  animation: 7s infinite engrtrans linear;
+  z-index: -1;
+}
+
+.img2 {
+  content: url(src/engrenage.png);
+  position: absolute;
+  top: 57%;
+  left: 10%;
+  width: 20%;
+  animation: 4s infinite engrtrans reverse linear;
+  z-index: -1;
+}
+
+.img3 {
+  content: url(src/engrenage.png);
+  position: absolute;
+  top: 38%;
+  left: 79%;
+  width: 15%;
+  animation: 4s infinite engrtrans linear;
+  z-index: -1;
+}
+
+@keyframes engrtrans {
+  0% {
+    transition: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .text h1 {
   font-weight: 900;
   font-size: 70px;
@@ -63,12 +105,35 @@ body {
   text-align: left;
 }
 
+.machine {
+  display: flex;
+  height: 36px;
+}
+
 .prenom {
   font-weight: 100;
   font-size: 30px;
   color: #54c9cd;
   font-family: "europaregular";
   text-align: left;
+}
+
+.clignotant {
+  width: 3px;
+  height: 30px;
+  background-color: #3e3d89;
+  display: inline-block;
+  animation: clignoter 0.7s infinite alternate;
+}
+
+@keyframes clignoter {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
 }
 
 .menu-container {
@@ -479,7 +544,7 @@ time {
   position: relative;
   overflow: hidden;
 }
-.active {
+.c .active {
   flex-grow: 100;
 }
 
@@ -544,25 +609,38 @@ i {
   width: 60px;
 }
 
-.cards-container {
+.d {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
+.cards-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 75%;
+}
 .card-wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  align-items: center;
   width: 900px;
-  margin: auto;
+  margin: 0;
 }
 
 .card {
   width: 270px;
   height: 350px;
-  transition: transform 1s cubic-bezier(0.86, 0, 0.07, 1);
+  transition: transform 2s cubic-bezier(0.86, 0, 0.07, 1);
   transform-style: preserve-3d;
 }
 
-.card:hover {
+.d .active {
   transform: rotateY(180deg);
+}
+.cote {
+  height: 300px;
+  width: 220px;
 }
 .side {
   width: 100%;
@@ -583,14 +661,33 @@ i {
 }
 
 .side--back {
+  overflow: hidden;
   background-color: #2a2b69;
   color: white;
   display: flex;
-  align-items: end;
+  align-items: center;
   justify-content: space-between;
   flex-direction: column;
   transform: rotateY(180deg);
   padding: 30px 20px;
+}
+
+.side--back div {
+  height: 70%;
+  width: 100%;
+  overflow: hidden;
+}
+.side--back h5 {
+  animation: scrollText 8s linear infinite;
+}
+
+@keyframes scrollText {
+  0% {
+    transform: translateY(20%);
+  }
+  100% {
+    transform: translateY(-40%);
+  }
 }
 
 .down {
@@ -638,6 +735,7 @@ form {
   width: 100%;
   height: 300px;
   border-radius: 15px;
+  resize: none;
 }
 
 .btn {
@@ -660,10 +758,22 @@ form {
   cursor: pointer;
 }
 
+.btn > input:hover {
+  background-color: #54c9cd;
+}
+
 .e .icon {
   width: 12%;
   display: flex;
   justify-content: space-between;
+}
+
+.e a {
+  color: #fff;
+}
+
+.e i:hover {
+  color: #54c9cd;
 }
 
 input::placeholder {
