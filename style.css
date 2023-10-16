@@ -614,6 +614,17 @@ i {
   flex-direction: column;
   align-items: center;
 }
+
+.d .arrow {
+  color: #3e3d89;
+  font-size: 90px;
+  font-family: "eurostileregular";
+}
+
+.d .arrow:hover {
+  color: #2a2b69;
+  cursor: pointer;
+}
 .cards-container {
   display: flex;
   justify-content: space-evenly;
