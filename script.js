@@ -181,11 +181,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Ajout des écouteurs d'événements pour les flèches
   const leftArrow = document.querySelector(".left-arrow");
-  leftArrow.addEventListener("click", moveLeft);
+  leftArrow.addEventListener("click", moveRight);
 
   const rightArrow = document.querySelector(".right-arrow");
-  rightArrow.addEventListener("click", moveRight);
+  rightArrow.addEventListener("click", moveLeft);
 
   // Appliquez initialement les styles des cartes
+
   updateCardStyles();
 });

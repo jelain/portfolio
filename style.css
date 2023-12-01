@@ -145,7 +145,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 55%;
+  width: 400px;
 }
 
 .menu li {
@@ -225,7 +225,7 @@ body {
 
 .container .profil {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   width: 750px;
   margin-top: 30px;
@@ -242,8 +242,34 @@ body {
 
 .profil img {
   border-radius: 50%;
+  width: 300px;
 }
 
+@media (max-width: 1225px) {
+  .ban > .contenu {
+    flex-direction: column;
+  }
+  .prenom {
+    text-align: center;
+  }
+
+  .text h1 {
+    text-align: center;
+  }
+  .machine {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 750px) {
+  .menu-container {
+    display: none;
+  }
+
+  .ban {
+    align-items: center;
+  }
+}
 /* FIN A PROPOS */
 
 *,
@@ -806,4 +832,14 @@ textarea {
 textarea::placeholder {
   font-family: "europaregular";
   font-size: 15px;
+}
+
+footer {
+  background-color: #54c9cd;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border-radius: 20px 20px 0 0;
 }
