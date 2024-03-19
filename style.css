@@ -79,20 +79,14 @@ time {
 .container .sous-container > .contenu {
   display: flex;
   justify-content: center;
-  height: max-content;
-  position: absolute;
-  top: 53%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
+  height: 71vh;
 }
 
 .container .sous-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
-  position: relative;
+  justify-content: space-between;
 }
 
 .container .button {
@@ -146,7 +140,6 @@ time {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  top: 47%;
 }
 
 #home .contenu h1 {
@@ -210,6 +203,7 @@ time {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  margin-bottom: 1000px;
 }
 
 #apropos .gauche {
@@ -558,8 +552,8 @@ form {
 #parcours .timeline ul li .carte {
   position: relative;
   bottom: 0;
-  width: 330px;
-  height: 140px;
+  width: 350px;
+  height: 160px;
   padding: 15px;
   background: var(--couleur-secondaire);
   color: white;
