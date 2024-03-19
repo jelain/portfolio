@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Jelain John Jesuratnam</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/5aa2ca8fd4.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="navbar">
+        <ul>
+          <li class="active">
+            <a href="#home"><i class="bx bx-home-alt-2"></i></a>
+          </li>
+          <li>
+            <a href="#apropos"><i class="bx bx-user"></i></a>
+          </li>
+          <li>
+            <a href="#parcours"><i class="bi bi-mortarboard"></i></a>
+          </li>
+          <li>
+            <a href="#competences"><i class="bi bi-journal-check"></i></a>
+          </li>
+          <li>
+            <a href="#projet"><i class="bi bi-suitcase-lg"></i></a>
+          </li>
+          <li>
+            <a href="#contacter"><i class="bi bi-chat-left-dots"></i></a>
+          </li>
+        </ul>
+      </div>
+      <div class="container" id="home">
+        <div class="sous-container">
+          <div class="bar">
+            <h5>JelainJJ</h5>
+            <i class="bx bx-moon"></i>
+          </div>
+          <div class="contenu">
+            <h1>Je suis <span class="degrade">Jelain</span></h1>
+            <h2>Etudiant en Informatique</h2>
+            <div class="button" onclick="redirectToLink('google.fr')">
+              <p class="degrade">Télécharger mon CV</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container" id="apropos">
+        <div class="sous-container">
+          <div class="titre">
+            <h3>A propos de moi</h3>
+            <p>Qui suis-je ?</p>
+          </div>
+          <div class="contenu">
+            <div class="gauche">
+              <img src="src/profil.png" alt="" />
+            </div>
+            <div class="droite">
+              <h4>Je suis Jelain John Jesuratnam</h4>
+              <div class="presentation">
+                <p>
+                  Actuellement étudiant, ce site est dédié à la présentation de
+                  divers projets que j'ai réalisé tout au long de mon parcours
+                  étudiant, que ce soit en équipe ou en tant qu'individu. Mon
+                  objectif est de mettre en avant ma passion pour le
+                  développement, tout en démontrant mon intérêt pour d'autres
+                  domaines de l'informatique. Actuellement, je suis à la
+                  recherche d'un stage pour une periode de 8 à 10 semaines à
+                  partir du 22 janvier 2024. N'hésitez pas à me contacter par le
+                  formulaire de contact si vous souhaitez en savoir plus ou si
+                  vous avez des opportunités à me proposer !
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container" id="parcours">
+        <div class="sous-container">
+          <div class="titre">
+            <h3>Mon parcours</h3>
+            <p>Comment suis-je arrivé à là ?</p>
+          </div>
+          <div class="contenu">
+            <!--
+            <div class="wrapper">
+
+              <div class="carte">
+                <h4 class="annee">2024</h4>
+                <div class="info">
+                  <h5>BUT Informatique</h5>
+                  <p>2ieme année</p>
+                </div>
+                <div class="lieu">
+                  <h6>Université Sorbonne Paris Nord</h6>
+                  <p>Villetaneuse - 93</p>
+                </div>
+              </div>
+              <div class="sep"></div>
+              <div class="carte">
+                <h4 class="annee">2024</h4>
+                <div class="info">
+                  <h5>BUT Informatique</h5>
+                  <p>2ieme année</p>
+                </div>
+                <div class="lieu">
+                  <h6>Université Sorbonne Paris Nord</h6>
+                  <p>Villetaneuse - 93</p>
+                </div>
+              </div>
+              <div class="sep"></div>
+              <div class="carte">
+                <h4 class="annee">2024</h4>
+                <div class="info">
+                  <h5>BUT Informatique</h5>
+                  <p>2ieme année</p>
+                </div>
+                <div class="lieu">
+                  <h6>Université Sorbonne Paris Nord</h6>
+                  <p>Villetaneuse - 93</p>
+                </div>
+              </div>
+              <div class="sep"></div>
+              <div class="carte">
+                <h4 class="annee">2024</h4>
+                <div class="info">
+                  <h5>BUT Informatique</h5>
+                  <p>2ieme année</p>
+                </div>
+                <div class="lieu">
+                  <h6>Université Sorbonne Paris Nord</h6>
+                  <p>Villetaneuse - 93</p>
+                </div>
+              </div>
+              <div class="sep"></div>
+              <div class="carte">
+                <h4 class="annee">2024</h4>
+                <div class="info">
+                  <h5>BUT Informatique</h5>
+                  <p>2ieme année</p>
+                </div>
+                <div class="lieu">
+                  <h6>Université Sorbonne Paris Nord</h6>
+                  <p>Villetaneuse - 93</p>
+                </div>
+              </div>
+            </div>      
+        -->
+
+            <section class="timeline">
+              <ul>
+                <li>
+                  <div class="carte">
+                    <time>2021</time>
+                    <div class="info">
+                      <h3>BUT Informatique</h3>
+                      <p>Deuxième Année</p>
+                    </div>
+                    <div class="lieu">
+                      <h4>Université Sorbonne Paris Nord</h4>
+                      <p>Villetaneuse - 93</p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="carte">
+                    <time>2019</time>
+                    <div class="info">
+                      <h3>Baccalaureat STI2D (SIN)</h3>
+                      <p>Mention Assez bien</p>
+                    </div>
+                    <div class="lieu">
+                      <h4>Lycée Jean Monnet</h4>
+                      <p>Crépy-en-Valois - 60</p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="carte">
+                    <time>2016</time>
+                    <div class="info">
+                      <h3>Brevet des collèges</h3>
+                      <p>Mention Très bien</p>
+                    </div>
+                    <div class="lieu">
+                      <h4>Collège Jean de la Fontaine</h4>
+                      <p>Crépy-en-Valois - 60</p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </div>
+      <div class="container" id="competences">
+        <div class="sous-container">
+          <div class="titre">
+            <h3>Mon compétences</h3>
+            <p>Qu’est-ce que je sais faire ?</p>
+          </div>
+          <div class="contenu">
+            <div class="wrapper" data-aos="fade-up">
+              <div class="col noncol" id="a">
+                <div class="bloc">
+                  <div class="bloc-haut">
+                    <i class="fa-solid fa-code"></i>
+                    <div class="ligne"></div>
+                    <div>
+                      <h3>Langage de développement</h3>
+                    </div>
+                  </div>
+                  <div class="contenu">
+                    <div class="element">
+                      <i class="bx bxl-python"></i>
+                      <p>Python</p>
+                    </div>
+                    <div class="element">
+                      <i class="bx bxl-java"></i>
+                      <p>Java</p>
+                    </div>
+                    <div class="element">
+                      <i class="bx bxl-php"></i>
+                      <p>PHP</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="bloc">
+                  <div class="bloc-haut">
+                    <i class="fa-solid fa-database"></i>
+
+                    <div class="ligne"></div>
+                    <div>
+                      <h3>Base de données</h3>
+                    </div>
+                  </div>
+                  <div class="contenu">
+                    <div class="element">
+                      <i class="bx bxl-postgresql"></i>
+                      <p>PostgreSQL</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="bloc">
+                  <div class="bloc-haut">
+                    <i class="fa-solid fa-language"></i>
+                    <div class="ligne"></div>
+                    <div>
+                      <h3>Langues</h3>
+                    </div>
+                  </div>
+                  <div class="contenu">
+                    <div class="element">
+                      <img src="src/icone/fr.png" />
+                      <p>Français</p>
+                    </div>
+                    <div class="element">
+                      <img src="src/icone/en.png" />
+                      <p>Anglais</p>
+                    </div>
+                    <div class="element">
+                      <img src="src/icone/es.png" />
+                      <p>Espagnol</p>
+                    </div>
+                    <div class="element">
+                      <img src="src/icone/tml.png" />
+                      <p>Tamil</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="bloc">
+                  <div class="bloc-haut">
+                    <i class="fa-solid fa-gear"></i>
+                    <div class="ligne"></div>
+                    <div>
+                      <h3>Framework & Bibliothèque</h3>
+                    </div>
+                  </div>
+                  <div class="contenu">
+                    <div class="element">
+                      <i class="bx bxl-jquery"></i>
+                      <p>JQuery</p>
+                    </div>
+                    <div class="element">
+                      <i class="bx bxl-angular"></i>
+                      <p>Angular</p>
+                    </div>
+                    <div class="element">
+                      <i class="bx bxl-vuejs"></i>
+                      <p>Vue.js</p>
+                    </div>
+                    <div class="element">
+                      <i class="bx bxl-nodejs"></i>
+                      <p>Node.js</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col noncol" id="b">
+                <div class="bloc">
+                  <div class="bloc-haut">
+                    <i class="fa-solid fa-globe"></i>
+                    <div class="ligne"></div>
+                    <div>
+                      <h3>Langage de développement web</h3>
+                    </div>
+                  </div>
+                  <div class="contenu">
+                    <div class="element">
+                      <i class="bx bxl-html5"></i>
+                      <p>HTML</p>
+                    </div>
+                    <div class="element">
+                      <i class="bx bxl-css3"></i>
+                      <p>CSS</p>
+                    </div>
+                    <div class="element">
+                      <i class="bx bxl-javascript"></i>
+                      <p>JavaScript</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="bloc">
+                  <div class="bloc-haut">
+                    <i class="fa-brands fa-ubuntu"></i>
+
+                    <div>
+                      <h3>Systèmes d'exploitation</h3>
+                    </div>
+                  </div>
+                  <div class="contenu">
+                    <div class="element">
+                      <i class="fa-brands fa-linux"></i>
+                      <p>Linux</p>
+                    </div>
+                    <div class="element">
+                      <i class="bx bxl-windows"></i>
+                      <p>Windows</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="bloc">
+                  <div class="bloc-haut">
+                    <i class="fa-solid fa-rocket"></i>
+
+                    <div class="ligne"></div>
+                    <div>
+                      <h3>Logiciels</h3>
+                    </div>
+                  </div>
+                  <div class="contenu">
+                    <div class="element">
+                      <i class="bx bxl-adobe"></i>
+                      <p>Suite Adobe</p>
+                    </div>
+                    <div class="element">
+                      <i class="bx bxl-microsoft"></i>
+                      <p>Suite Office</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="bloc">
+                  <div class="bloc-haut">
+                    <i class="fa-solid fa-users"></i>
+
+                    <div>
+                      <h3>Travail en équipe</h3>
+                    </div>
+                  </div>
+                  <div class="contenu">
+                    <p class="txt">
+                      Je suis un excellent travailleur d'équipe. J'ai l'habitude
+                      de collaborer efficacement avec mes collègues. Je suis à
+                      l'écoute des autres et je sais comment contribuer de
+                      manière positive lors des discussions de groupe. Ma
+                      capacité à m'adapter aux différents styles de travail et à
+                      soutenir mes coéquipiers fait de moi un membre précieux de
+                      toute équipe. Ensemble, nous pouvons atteindre de grands
+                      résultats.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container" id="projet">
+        <div class="sous-container">
+          <div class="titre">
+            <h3>Mes projets</h3>
+            <p>Qu’est-ce que j’ai réalisé ?</p>
+          </div>
+          <div class="contenu">
+            <div class="carte">
+              <img src="src/img/iut.jpg" alt="" />
+              <div class="text">
+                <h3>Projet Universitaires</h3>
+              </div>
+            </div>
+            <div class="popup" id="popup">
+              <div class="overlay"></div>
+              <div class="popup-content">
+                <div class="close-btn"><i class="fa-solid fa-xmark"></i></div>
+                <h2 class="titre">Projet Universitaires</h2>
+                <p class="desc">
+                  Pendant mon cursus en BUT Informatique, j'ai eu l'occasion de
+                  participer à plusieurs projets universitaires variés, couvrant
+                  non seulement un large éventail de domaines de l'informatique,
+                  mais également d'autres disciplines telles que la
+                  communication. <br />Ces projets ont représenté pour moi une
+                  opportunité précieuse de mettre en pratique les connaissances
+                  acquises en cours et de développer mes compétences techniques,
+                  tout en explorant de nouveaux concepts et en collaborant avec
+                  mes camarades.
+                </p>
+                <div>
+                  <h3>Languages</h3>
+                  <div class="logo">
+                    <i class="fa-brands fa-python"></i>
+                    <i class="fa-brands fa-java"></i>
+                    <i class="fa-brands fa-html5"></i>
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <i class="fa-brands fa-square-js"></i>
+                    <i class="bx bxl-postgresql"></i>
+                  </div>
+                </div>
+                <div class="lien">
+                  <a href="https://github.com/jelain/projet-but"
+                    ><i class="bx bxl-github"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="carte">
+              <img src="src/img/portfoliov1.png" alt="" />
+              <div class="text">
+                <h3>Portfolio v1</h3>
+              </div>
+            </div>
+            <div class="popup" id="popup">
+              <div class="overlay"></div>
+              <div class="popup-content">
+                <div class="close-btn"><i class="fa-solid fa-xmark"></i></div>
+                <h2 class="titre">Portfolio v1</h2>
+                <p class="desc">
+                  Cette première version de mon portfolio a été créée l'année
+                  dernière dans le cadre de ma recherche d'alternance.
+                </p>
+                <div>
+                  <h3>Languages utilisés</h3>
+                  <div class="logo">
+                    <i class="fa-brands fa-html5"></i>
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <i class="fa-brands fa-square-js"></i>
+                  </div>
+                </div>
+                <div class="lien">
+                  <i class="bx bxl-github"></i>
+                  <i class="fa-regular fa-eye"></i>
+                </div>
+              </div>
+            </div>
+            <div class="carte">
+              <img src="src/img/vifauto.png" alt="" />
+              <div class="text">
+                <h3>Outils de gestion des fournisseurs VifAuto</h3>
+              </div>
+            </div>
+            <div class="popup" id="popup">
+              <div class="overlay"></div>
+              <div class="popup-content">
+                <div class="close-btn"><i class="fa-solid fa-xmark"></i></div>
+                <h2 class="titre">
+                  Outils de gestion des fournisseurs VifAuto
+                </h2>
+                <p class="desc">
+                  Cet outil a été développé lors de mon stage en deuxième année
+                  de BUT Informatique pour l'entreprise VifAuto, spécialisée
+                  dans les pièces automobiles. Il vise à simplifier la recherche
+                  de pièces en permettant la gestion des fournisseurs et des
+                  marques.
+                </p>
+                <div>
+                  <h3>Languages utilisés</h3>
+                  <div class="logo">
+                    <i class="bx bxl-vuejs"></i>
+                    <i class="bx bxl-nodejs"></i>
+                    <i class="bx bxl-postgresql"></i>
+                  </div>
+                </div>
+                <div class="lien">
+                  <a href="https://github.com/jelain/vifauto"
+                    ><i class="bx bxl-github"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container" id="contacter">
+        <div class="sous-container">
+          <div class="titre">
+            <h3>Me contacter</h3>
+            <p>Voulez-vous plus d’informations ?</p>
+          </div>
+          <div class="contenu">
+            <div class="info"></div>
+            <div class="form">
+              <form action="https://formspree.io/f/myyqlwzy" method="post">
+                <div class="inputBox">
+                  <input type="text" name="nom" id="nomInput" required />
+                  <span>Nom</span>
+                </div>
+                <div class="inputBox">
+                  <input type="text" name="email" id="emailInput" required />
+                  <span>Email</span>
+                  <div id="errorMessage" style="display: none">
+                    Veuillez entrer une adresse e-mail valide.
+                  </div>
+                </div>
+                <div class="inputBox">
+                  <textarea
+                    name="message"
+                    rows="5"
+                    cols="40"
+                    required
+                  ></textarea>
+                  <span>Message</span>
+                </div>
+                <div class="btn">
+                  <div class="button">
+                    <a href="" class="btnForm degrade">Envoyer</a>
+                  </div>
+                  <div class="icon">
+                    <a
+                      href="https://www.linkedin.com/in/jelain-john-jesuratnam-64b702270"
+                      ><i class="fa-brands fa-linkedin-in"></i
+                    ></a>
+
+                    <a href="https://github.com/jelain"
+                      ><i class="fa-brands fa-github"></i
+                    ></a>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="maintenance">
+      <h4>Site en cours de maintenance</h4>
+      <p>
+        La fonctionnalité mode clair n'est pas encore opérationnelle et le site
+        n'est pas totalement responsive.
+      </p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.39/dist/lenis.min.js"></script>
+
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
