@@ -179,7 +179,9 @@ time {
 }
 
 .navbar ul li {
-  transition: transform 0.3s ease;
+  width: 50px;
+  display: flex;
+  justify-content: center;
 }
 
 .navbar ul li.active {
