@@ -244,7 +244,7 @@ document.addEventListener("DOMContentLoaded", function () {
           "--degrade",
           "-webkit-linear-gradient(45deg, #9f89e1, #7f95c6, #83c0f2)"
         );
-        // BUTTONS
+        /*// BUTTONS
         const buttons = document.querySelectorAll(".button");
 
         buttons.forEach((button) => {
@@ -266,7 +266,7 @@ document.addEventListener("DOMContentLoaded", function () {
             this.querySelector("a").style.color = "";
           });
         });
-
+*/
         couleursModifiees = true; // Mettre à jour le statut des couleurs
       } else {
         // COULEURS FONCE
