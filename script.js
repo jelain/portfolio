@@ -220,6 +220,71 @@ function ajouterTargetBlank() {
     }
   }
 }
-
-// Appeler la fonction pour l'exécuter dès que la page est chargée
 window.onload = ajouterTargetBlank;
+
+document.addEventListener("DOMContentLoaded", function () {
+  const barItems = document.querySelectorAll(".bar i");
+
+  let couleursModifiees = false; // Variable pour suivre si les couleurs ont été modifiées
+
+  barItems.forEach((item) => {
+    item.addEventListener("click", function () {
+      if (!couleursModifiees) {
+        // COULEURS CLAIR
+        document.documentElement.style.setProperty(
+          "--couleur-principale",
+          "#E9EDEF"
+        );
+        document.documentElement.style.setProperty(
+          "--couleur-secondaire",
+          "#D5DADE"
+        );
+        document.documentElement.style.setProperty("--blanc", "#101019");
+        document.documentElement.style.setProperty(
+          "--degrade",
+          "-webkit-linear-gradient(45deg, #9f89e1, #7f95c6, #83c0f2)"
+        );
+        // BUTTONS
+        const buttons = document.querySelectorAll(".button");
+
+        buttons.forEach((button) => {
+          button.addEventListener("mouseenter", function () {
+            this.querySelector("p").style.color = "#E9EDEF";
+          });
+
+          button.addEventListener("mouseleave", function () {
+            this.querySelector("p").style.color = "";
+          });
+        });
+
+        buttons.forEach((button) => {
+          button.addEventListener("mouseenter", function () {
+            this.querySelector("a").style.color = "#E9EDEF";
+          });
+
+          button.addEventListener("mouseleave", function () {
+            this.querySelector("a").style.color = "";
+          });
+        });
+
+        couleursModifiees = true; // Mettre à jour le statut des couleurs
+      } else {
+        // COULEURS FONCE
+        document.documentElement.style.setProperty(
+          "--couleur-principale",
+          "#101019"
+        );
+        document.documentElement.style.setProperty(
+          "--couleur-secondaire",
+          "#1e1e29"
+        );
+        document.documentElement.style.setProperty("--blanc", "#fcfcfe");
+        document.documentElement.style.setProperty(
+          "--degrade",
+          "-webkit-linear-gradient(45deg, #9f89e1, #7f95c6, #83c0f2)"
+        );
+        couleursModifiees = false; // Mettre à jour le statut des couleurs
+      }
+    });
+  });
+});

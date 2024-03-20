@@ -11,7 +11,7 @@
 * {
   margin: 0;
   padding: 0;
-  color: #fcfcfe;
+  color: var(--blanc);
   scroll-behavior: smooth;
   box-sizing: border-box;
 }
@@ -456,6 +456,7 @@ form {
   -webkit-background-clip: text;
   color: transparent;
 }
+
 /*FIN CONTACTER*/
 
 /*PARCOURS*/
@@ -531,7 +532,7 @@ form {
   width: 1px;
   margin: 0 auto;
   padding-top: 15px;
-  background: #fff;
+  background: var(--blanc);
 }
 
 #parcours .timeline ul li::after {
@@ -736,13 +737,12 @@ form {
 }
 
 .lien i {
-  font-size: 1.5rem;
-}
-
-.lien i:nth-child(1) {
   font-size: 1.7rem;
 }
 
+.lien > a:nth-child(2) > i {
+  font-size: 1.5rem;
+}
 /*FIN PROJET*/
 
 .maintenance {
