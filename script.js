@@ -214,7 +214,10 @@ popups.forEach(function (popupNode) {
 function ajouterTargetBlank() {
   var liens = document.getElementsByTagName("a");
   for (var i = 0; i < liens.length; i++) {
-    liens[i].setAttribute("target", "_blank");
+    // Vérifier si le lien est à l'intérieur de la div "nav"
+    if (!liens[i].closest(".navbar") && !liens[i].closest("#home")) {
+      liens[i].setAttribute("target", "_blank");
+    }
   }
 }
 

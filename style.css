@@ -79,14 +79,14 @@ time {
 .container .sous-container > .contenu {
   display: flex;
   justify-content: center;
-  height: 71vh;
+  flex-grow: 1;
+  padding-bottom: 6em;
 }
 
 .container .sous-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+  height: 100%;
 }
 
 .container .button {
@@ -203,7 +203,6 @@ time {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  margin-bottom: 1000px;
 }
 
 #apropos .gauche {
@@ -671,13 +670,13 @@ form {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 95%;
-  max-width: 550px;
-  height: 60%;
+  width: 30rem;
+  height: 30rem;
   background-color: var(--couleur-secondaire);
   padding: 30px;
   border-radius: 2rem;
   transition: all 300ms ease-in-out;
+  z-index: 100;
 }
 
 .popup.active {
@@ -751,6 +750,6 @@ form {
   bottom: 0;
   right: 0;
   opacity: 0.2;
-  padding: 20px;
+  padding: 30px;
   width: 30em;
 }
