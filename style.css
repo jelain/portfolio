@@ -135,6 +135,10 @@ time {
   cursor: pointer;
 }
 
+.bar .bx-sun {
+  font-size: 1.7rem;
+}
+
 #home .sous-container > .contenu {
   display: flex;
   flex-direction: column;

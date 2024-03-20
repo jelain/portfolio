@@ -224,6 +224,7 @@ window.onload = ajouterTargetBlank;
 
 document.addEventListener("DOMContentLoaded", function () {
   const barItems = document.querySelectorAll(".bar i");
+  let moonIcon = document.querySelector(".bar .bx");
 
   let couleursModifiees = false; // Variable pour suivre si les couleurs ont été modifiées
 
@@ -244,6 +245,11 @@ document.addEventListener("DOMContentLoaded", function () {
           "--degrade",
           "-webkit-linear-gradient(45deg, #9f89e1, #7f95c6, #83c0f2)"
         );
+
+        // Au clic sur l'icône, change la classe
+        moonIcon.classList.remove("bx-moon"); // Supprime la classe "bx-moon"
+        moonIcon.classList.add("bx-sun"); // Ajoute la classe "bx-sun"
+
         /*// BUTTONS
         const buttons = document.querySelectorAll(".button");
 
@@ -283,6 +289,10 @@ document.addEventListener("DOMContentLoaded", function () {
           "--degrade",
           "-webkit-linear-gradient(45deg, #9f89e1, #7f95c6, #83c0f2)"
         );
+
+        moonIcon.classList.remove("bx-sun"); // Supprime la classe "bx-moon"
+        moonIcon.classList.add("bx-moon"); // Ajoute la classe "bx-sun"
+
         couleursModifiees = false; // Mettre à jour le statut des couleurs
       }
     });
