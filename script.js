@@ -298,3 +298,67 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+document.body.style.cursor = "none";
+
+const coords = { x: 0, y: 0 };
+const circles = document.querySelectorAll(".circle");
+
+const colors = [
+  "#9f89e1",
+  "#9a8fe5",
+  "#9595e8",
+  "#909aeb",
+  "#8ca0ee",
+  "#88a5ef",
+  "#85aaf1",
+  "#83aef2",
+  "#81b3f2",
+  "#81b8f2",
+  "#82bcf2",
+  "#83c0f2",
+  "#81b3f2",
+  "#81b8f2",
+  "#82bcf2",
+  "#83c0f2",
+  "#81b3f2",
+  "#81b8f2",
+  "#82bcf2",
+  "#83c0f2",
+  "#81b3f2",
+  "#81b8f2",
+  "#82bcf2",
+  "#83c0f2",
+];
+circles.forEach((circle, index) => {
+  circle.x = 0;
+  circle.y = 0;
+  circle.style.backgroundColor = colors[index % colors.length];
+});
+
+window.addEventListener("mousemove", (e) => {
+  coords.x = e.clientX;
+  coords.y = e.clientY;
+});
+
+function animateCircle() {
+  let x = coords.x;
+  let y = coords.y;
+
+  circles.forEach((circle, index) => {
+    circle.style.left = x - 12 + "px";
+    circle.style.top = y - 12 + "px";
+
+    circle.style.scale = (circles.length - index) / circles.length;
+    circle.x = x;
+    circle.y = y;
+
+    const nextCircle = circles[index + 1] || circles[0];
+    x += (nextCircle.x - x) * 0.3;
+    y += (nextCircle.y - y) * 0.3;
+  });
+
+  requestAnimationFrame(animateCircle);
+}
+
+animateCircle();

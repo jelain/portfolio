@@ -759,3 +759,15 @@ form {
   padding: 30px;
   width: 30em;
 }
+
+.cursor .circle {
+  height: 24px;
+  width: 24px;
+  border-radius: 24px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000000;
+  pointer-events: none;
+  opacity: 0.25;
+}
