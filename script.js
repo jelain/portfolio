@@ -301,7 +301,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.body.style.cursor = "none";
 
-const coords = { x: 0, y: 0 };
+const coords = { x: -100, y: 0 };
 const circles = document.querySelectorAll(".circle");
 
 const colors = [
