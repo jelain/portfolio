@@ -753,11 +753,9 @@ form {
 
 .maintenance {
   position: absolute;
-  bottom: 0;
-  right: 0;
+  bottom: 30px;
+  right: 30px;
   opacity: 0.2;
-  padding: 30px;
-  width: 30em;
 }
 
 .cursor .circle {
